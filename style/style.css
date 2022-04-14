@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Shabnam', 'Segoe UI', Tahoma, sans-serif;
+  list-style-type: none;
+}
+
+body {
+  background-color: #1b1d39;
+}
+/*# sourceMappingURL=style.css.map */
