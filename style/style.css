@@ -10,6 +10,7 @@
 
 body {
   background-color: #1b1d39;
+  min-height: 100vh;
 }
 
 a {
@@ -148,6 +149,52 @@ a {
   border-radius: 1.5rem;
   padding: .5rem 1.2rem;
   font-size: 1.2rem;
+}
+
+.cards {
+  padding: 6rem 0;
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.cards-container__box {
+  width: 20%;
+  background-color: #f79158;
+  border-radius: .5rem;
+}
+
+.cards-container__box-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #1b1d39;
+}
+
+.cards-container__box-price {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #1b1d39;
+}
+
+.cards-container__box-btn {
+  background-color: #1b1d39;
+  padding: .5rem 1.2rem;
+  border-radius: 1.5rem;
+  color: #f79158;
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  border: none;
 }
 
 .support {
