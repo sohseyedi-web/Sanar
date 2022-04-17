@@ -20,11 +20,15 @@ a{
 .navbars{
     padding: 2.5rem 0;
 
+    position: relative;
+
+
     &-items{
         display: flex;
         align-items: center;
         justify-content: space-between;
         color: #efefef;
+
 
 
         &__right , &__left{
@@ -67,7 +71,7 @@ a{
             }
 
             &-register{
-                margin: 0 3rem;
+                margin: 0 1.5rem;
                 background-color: #f79158;
                 padding: .5rem 1.2rem;
                 border-radius: 1.5rem;
@@ -79,6 +83,63 @@ a{
             }
         }
 
+        &__left{
+            display: flex;
+            align-items: center;
+
+            .icon{
+                display: none;
+                cursor: pointer;
+            }
+        }
+
+        &__mobile{
+            display: none;
+        }
+
+
+        @media screen and (max-width : 998px){
+            
+            &__right{
+
+                &-text{
+                    display: none;
+                }
+            }
+            &__left{
+                .icon{
+                    display: block;
+                    margin-right: 1.5rem;
+                    font-size: 2rem;
+                }
+            }
+
+            &__mobile{
+                display: flex;
+                opacity: 0;
+                flex-direction: column;
+                position: absolute;
+                content: '';
+                width: 100%;
+                background-color: #efefef;
+                color: #1b1d39;
+                font-size: 1.5rem;
+                top: 80%;
+                line-height: 2.5;
+                right: 0;
+                text-align: center;
+                transition: opacity .4s ease-in-out;
+                z-index: -1;
+
+
+                &.active-nav{
+                    z-index:1;
+                    opacity: 1;
+                    transition: opacity .4s ease-in-out;
+                }
+            }
+        }
+
     }
 }
 
@@ -87,6 +148,7 @@ a{
 .header{
     padding: 5rem 0;
     color: #efefef;
+    z-index: 0;
 
     &-container{
         display: flex;
